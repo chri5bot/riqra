@@ -1,0 +1,15 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "backpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Torres",
+  "license": "ISC",
+  "dependencies": {
+    "backpack-core": "^0.8.3"
+  }
+}
