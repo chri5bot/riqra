@@ -1,6 +1,6 @@
 "use strict";
 module.exports = (sequelize, DataTypes) => {
-  const Comment = sequelize.define("comments", {
+  const Comments = sequelize.define("comments", {
     id: {
       type: DataTypes.STRING,
       primaryKey: true
@@ -11,5 +11,5 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  return Comment;
+  return Comments;
 };
