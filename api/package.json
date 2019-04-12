@@ -10,6 +10,10 @@
   "author": "Christian Torres",
   "license": "ISC",
   "dependencies": {
-    "backpack-core": "^0.8.3"
+    "apollo-server": "^2.4.8",
+    "backpack-core": "^0.8.3",
+    "dotenv": "^7.0.0",
+    "graphql": "^14.2.1",
+    "lodash": "^4.17.11"
   }
 }
