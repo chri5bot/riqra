@@ -1,3 +1,3 @@
-export default async () => {
-  console.log("hey resolver");
+export default async (parent, args, { db }, info) => {
+  return await db.comments.findAll();
 };
