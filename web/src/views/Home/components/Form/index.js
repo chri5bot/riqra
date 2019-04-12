@@ -45,7 +45,7 @@ function Form() {
             content.value = "";
           }}
         >
-          <input {...content} />
+          <textarea {...content} />
           <button type="submit">{loading ? "espera" : "agregar"}</button>
         </form>
       )}

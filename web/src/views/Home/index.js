@@ -14,8 +14,28 @@ function Home({ history }) {
         height: "100%"
       }}
     >
-      <Form />
-      <List />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "25%"
+        }}
+      >
+        <Form />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "75%"
+        }}
+      >
+        <List />
+      </div>
     </div>
   );
 }

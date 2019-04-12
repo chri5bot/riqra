@@ -4,8 +4,6 @@ import { onError } from "apollo-link-error";
 import { createUploadLink } from "apollo-upload-client";
 import { API_URL } from "./config";
 
-console.log("API_URL", API_URL);
-
 export const createClient = () => {
   const errorsLink = onError(({ graphQLErrors, networkError }) => {
     if (graphQLErrors) {
