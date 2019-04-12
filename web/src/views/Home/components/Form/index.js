@@ -41,6 +41,8 @@ function Form() {
             createComment({
               variables: { input: { content: content.value } }
             });
+
+            content.value = "";
           }}
         >
           <input {...content} />
