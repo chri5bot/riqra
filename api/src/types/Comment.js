@@ -6,7 +6,7 @@ export default gql`
     content: String
   }
 
-  input CreateBrandInput {
+  input CreateCommentInput {
     content: String!
   }
 
@@ -16,7 +16,7 @@ export default gql`
   }
 
   extend type Mutation {
-    createComment(input: CreateBrandInput!): Comment
+    createComment(input: CreateCommentInput!): Comment
     deleteComment(id: ID!): Boolean
   }
 `;

@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "dev:api": "cd api && npm run dev"
+    "dev:api": "cd api && npm run dev",
+    "dev:web": "cd web && npm run start"
   },
   "devDependencies": {
     "lerna": "^3.13.2"
