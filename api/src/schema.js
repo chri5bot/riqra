@@ -5,6 +5,8 @@ import * as scalars from "./types/scalars";
 
 import Comment from "./types/Comment";
 
+import CommentQueries from "./queries/comment";
+
 const Root = gql`
   type Query {
     _: Boolean
@@ -22,7 +24,7 @@ const Root = gql`
   }
 `;
 
-const resolvers = merge({}, scalars.resolvers);
+const resolvers = merge({}, scalars.resolvers, CommentQueries);
 
 const schema = makeExecutableSchema({
   typeDefs: [scalars.typeDefs, Root, Comment],
