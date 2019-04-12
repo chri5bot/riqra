@@ -3,6 +3,8 @@ import { merge } from "lodash";
 
 import * as scalars from "./types/scalars";
 
+import Comment from "./types/Comment";
+
 const Root = gql`
   type Query {
     _: Boolean
@@ -23,7 +25,7 @@ const Root = gql`
 const resolvers = merge({}, scalars.resolvers);
 
 const schema = makeExecutableSchema({
-  typeDefs: [scalars.typeDefs, Root],
+  typeDefs: [scalars.typeDefs, Root, Comment],
   resolvers
 });
 
