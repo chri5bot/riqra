@@ -2,8 +2,14 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "bs": "npm install && lerna bootstrap",
+    "clean": "lerna clean",
+    "distclean": "lerna clean --yes && rm -rf node_modules",
     "dev:api": "cd api && npm run dev",
-    "dev:web": "cd web && npm run start"
+    "dev:web": "cd web && npm run dev",
+    "build:api": "cd api && npm run build",
+    "build:web": "cd web && npm run build",
+    "start:api": "cd api && npm start"
   },
   "devDependencies": {
     "lerna": "^3.13.2"
